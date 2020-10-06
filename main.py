@@ -19,7 +19,7 @@ list_k = [5, 10, 20, 40, 60, 80, 100, 200]
 list_k2 = [5, 10, 15, 20, 25, 30, 35, 40]
 
 # The Ml-100k Dataset
-with open('results/ml100k_all.csv', mode='w') as result_file:
+with open('results_ml100k_all.csv', mode='w') as result_file:
     fieldnames = ['k', 'algo', 'MAE', 'RMSE']
     writer = csv.DictWriter(result_file, fieldnames=fieldnames)
     writer.writeheader()
@@ -152,7 +152,7 @@ with open('results/ml100k_all.csv', mode='w') as result_file:
         writer.writerow(raw_dict)
 
 # The ml1m Dataset
-with open('results/ml1m_all.csv', mode='w') as result_file:
+with open('results_ml1m_all.csv', mode='w') as result_file:
     fieldnames = ['k', 'algo', 'MAE', 'RMSE']
     writer = csv.DictWriter(result_file, fieldnames=fieldnames)
     writer.writeheader()
@@ -285,7 +285,7 @@ with open('results/ml1m_all.csv', mode='w') as result_file:
         writer.writerow(raw_dict)
 
 # The jester Dataset
-with open('results/jester_all.csv', mode='w') as result_file:
+with open('results_jester_all.csv', mode='w') as result_file:
     fieldnames = ['k', 'algo', 'MAE', 'RMSE']
     writer = csv.DictWriter(result_file, fieldnames=fieldnames)
     writer.writeheader()
