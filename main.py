@@ -3,7 +3,7 @@ import csv
 
 from surprise import Dataset, KNNBasic, SVD, SVDpp, BaselineOnly
 from surprise.model_selection import KFold, cross_validate
-from EBCR.cf_models import EbcrMsdKNN, EbcrCosKNN, EbcrNormPccKNN, NormPcc, SW_Norm_PccKNN, SW_MSD_KNN, SW_COS_KNN, LS_MSD_KNN, LS_COS_KNN, LS_Norm_PccKNN
+from cf_models import EbcrMsdKNN, EbcrCosKNN, EbcrNormPccKNN, NormPcc, SW_Norm_PccKNN, SW_MSD_KNN, SW_COS_KNN, LS_MSD_KNN, LS_COS_KNN, LS_Norm_PccKNN
 
 __author__ = "Yu DU"
 
