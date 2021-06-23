@@ -14,6 +14,7 @@ This command will execute the proposed method (and its variants) on several benc
 The EBCR term is the abbreviation of "Empirical Bayes Concordance Ratio", which is composed of two parts: the CR part and the EB part. The aim of the CR part is to eliminate the disparity of users' rating behaviors. This is done by first relaxing (discretizing) user tastes into three classes (i.e. like, neutral and dislike) and then by computing the ratio of users' concordantly co-rated items to model the rating concordance between users. The EB part is then used to adjust these ratios by considering the ratio distribution within the whole training samples. The adjusted ratios are then used to weight similarity measurement between users and/or items during a typical memory-based CF approach.
 
 ### Results overview
+The results of the experimentations are based on three benchmark datasets: [MovieLens-100K](https://grouplens.org/datasets/movielens/), [MovieLens-1M](https://grouplens.org/datasets/movielens/) and [Jester](https://grouplens.org/datasets/jester/).
 
 #### Comparing with state-of-the-art CF models.
 
@@ -27,3 +28,5 @@ The EBCR term is the abbreviation of "Empirical Bayes Concordance Ratio", which 
 |   EBCR   |     <ins>0.7348</ins>     |     0.9413     |    0.7052    |    0.9016    | **3.0158** | **4.1008** |
 
 The "results" folder contains the details of evaluation results comparing with other methods.
+
+The datasets are also available in the public [zenodo repository](https://doi.org/10.5281/zenodo.5013115).
